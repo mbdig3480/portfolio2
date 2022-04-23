@@ -1,16 +1,20 @@
 {
   "name": "lab6",
   "version": "1.0.0",
+  "homepage": "https://mbdig3480.github.io/portfolio2_part1",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
+    "deploy": "expo-gh-pages",
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "expo": "~44.0.0",
+    "expo-gh-pages": "^1.2.0",
     "expo-status-bar": "~1.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
