@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import React, { useState, useCallback } from 'react';
-import { StyleSheet, Text, View, Button, TextInput } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TextInput } from 'react-native';
 
 export default function TodayDate() {
     let [date, setDate] = useState("")
@@ -12,7 +11,6 @@ export default function TodayDate() {
             </View>
             <TextInput style={styles.input} value={date} onChangeText={setDate} placeholder="Enter today's date in this format: MM/DD/22"></TextInput>
             <Text>Today's Date is: {date}</Text>
-            <StatusBar style="auto"/>
         </View>
     );
 }
